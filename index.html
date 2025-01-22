@@ -5,45 +5,94 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Deborah Alvina - Portfolio</title>
         <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     <body>
         <navbar>
-            <img src="Images/Logo-Cut.png" alt="logo" id="logo"/>
+            <img src="Images/logo_white.png" alt="logo" id="logo"/>
             <div id="menu">
-                <a href="#about">ABOUT ME</a>
-                <a href="#skills">SKILLS</a>
-                <a href="#projects">PROJECTS</a>
-                <a href="#certifications">CERTIFICATIONS</a>
+                <a class="menubutton" href="#about">ABOUT ME</a>
+                <a class="menubutton" href="#skills-certifications">SKILLS & CERTIFICATIONS</a>
+                <a class="menubutton" href="#projects">PROJECTS</a>
+                <a class="menubutton" href="#contact">CONTACT</a>
             </div>
         </navbar>
         <section id="about">
-            <div class="space"></div>
-            <div id="text">
-                <h1>Hey, I'm Deborah Alvina... </h1>
-                <p class="hoverzoom">I am Deborah Alvina, a third year computer science and engineering student at SRM Istitute of Science and Technology. I am seeking exciting opportunities to hone my skills and deepen my knowledge in the field of Computer Science. With a strong foundation in programming languages such as C, C++ and Python, I have also developed a solid understanding of front-end web development.  I am passionate about learning, problem-solving, and contributing to meaningful projects, and I look forward to collaborating with industry professionals to further refine my skills and make a positive impact.</p>
-                <div class="line two"></div>
+            <div id="part1">
+                <div id="text">
+                    <h1>Hey, I'm Deborah Alvina... </h1>
+                    <p>Computer Science and Engineering student at SRM Istitute of Science and Technology</p>
+                </div>
+                <div id="img">
+                    <img src="Images/Debby.jpg" alt="profile-image" id="profile-img"/>
+                    <div class="icons">
+                        <i class="fa-solid fa-envelope fa-2x"></i>
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                        <i class="fa-brands fa-github fa-2x"></i>
+                        <i class="fa-brands fa-hackerrank fa-2x"></i>
+                    </div>
+                </div>
             </div>
-            <div id="image">
-                <div class="line one"></div>
-                <div class="circle big hoverzoom"></div>
-                <img src="Images/Deborah.jpg" alt="profile-image" id="profile-img" class="hoverzoom"/>
-                <div class="circle small hoverzoom"></div>
+            <div class="obj">
+                <h3>About me:</h3>
+                <p>Strong foundation in programming languages such as C, C++ and Python, also developed a solid understanding of front-end web development. Passionate about learning, problem-solving, and contributing to meaningful projects.</p>
+            </div>
+            <div class="obj">
+                <h3>Objective:</h3>
+                <p>To work collaboratively with experienced professionals, embracing new challenges, and learning from dynamic industry environments.</p>
             </div>
         </section>
-        <section id="skills">
-            <h1 class="topic">SKILLS</h1>
-            <div class="line three"></div>
-                <h1 class="slide">C</h1>
-                <h1 class="slide">C++</h1>
-                <h1 class="slide">Python</h1>
-                <h1 class="slide">HTML</h1>
-                <h1 class="slide">CSS</h1>
-                <div class="line four"></div>
+        <section id="skills-certifications">
+            <div id="skills">
+                <div id="topic"><h1>SKILLS & <br>CERTIFICATIONS</h1></div>
+                <div id="div"></div>
+                <div id="content">
+                    <h1>Skills</h1>
+                    <div id="bubbles">
+                        <p class="bubble">C</p>
+                        <p class="bubble">C++</p>
+                        <p class="bubble">Python</p>
+                        <p class="bubble">Problem Solving</p>
+                        <p class="bubble">Debugging</p>
+                        <p class="bubble">HTML</p>
+                        <p class="bubble">CSS</p>
+                        <p class="bubble">Data Structures</p>
+                        <p class="bubble">Algorithms</p>
+                        <p class="bubble">DBMS</p>
+                        <p class="bubble">Networks</p>
+                        <p class="bubble">Adaptability</p>
+                        <p class="bubble">Analytical Thinking</p>
+                    </div>
+                </div>
+                <div id="info">
+                    <h1>What's ahead...?</h1>
+                    <p>Currently focused on advancing coding expertise by refining implementations and adopting best practices, with an emphasis on writing clean, efficient, and maintainable code. Simultaneously exploring new technologies and frameworks in web development, such as responsive design techniques and dynamic user interface development, to create engaging and user-friendly applications. Including delving into advanced debugging methods to streamline development processes and experimenting with modern web tools to enhance project efficiency.</p>
+                </div>
+            </div>
+            <div id="cover">
+                <div id="certifications">
+                    <h1>Certifications</h1>
+                    <ul>
+                        <li class="hoverzoom"><a href="Documents/Data Structures in C++.pdf" target="_blank">Data Structures in C++ (Scaler)</a></li>
+                        <li class="hoverzoom"><a href="Documents/Programming, Data Structures And Algorithms Using Python.pdf" target="_blank">Programming, Data Structures And Algorithms Using Python (NPTEL)</a></li>
+                        <li class="hoverzoom"><a href="Documents/Fundamental Algorithms Design And Analysis.pdf" target="_blank">Fundamental Algorithms Design And Analysis (NPTEL)</a></li>
+                        <li class="hoverzoom"><a href="Documents/Demystifying Networking.pdf" target="_blank">Demystifying Networking (NPTEL)</a></li>
+                        <li class="hoverzoom"><a href="Documents/Introduction To Operating Systems.pdf" target="_blank">Introduction To Operating Systems (NPTEL)</a></li>
+                        <li class="hoverzoom"><a href="Documents/Introduction To Machine Learning - IITKGP.pdf" target="_blank">Introduction To Machine Learning - IITKGP (NPTEL)</a></li>
+                        <li class="hoverzoom"><a href="Documents/Career Essentials in Generative AI.pdf" target="_blank">Career Essentials in Generative AI (Microsoft and LinkedIn)</a></li>
+                    </ul>
+                </div>
+                <div id="animate">
+                    <div class="step one"></div>
+                    <div class="step two"></div>
+                    <div class="step three"></div>
+                </div>
+            </div>
         </section>
+            
         <section id="projects">
             <div></div>
             <h1 class="topic">PROJECTS</h1>
-            <div class="line three"></div>
                 <div class="projectslide">
                     <h2>CSS-Flex Documentation</h2>
                     <a href="https://cssflexdocumentation.vercel.app/" target="_blank">
@@ -62,6 +111,14 @@
                 </div>
                 <div class="line four"></div>
                 <div></div>
+        </section>
+        <section id="contact">
+            <h1 class="topic1">CONTACT ME</h1>
+            <i class="fa-solid fa-envelope fa-4x"></i>
+            <i class="fa-brands fa-linkedin fa-4x"></i>
+            <i class="fa-brands fa-github fa-4x"></i>
+            <i class="fa-brands fa-hackerrank fa-4x"></i>
+            <div class="lin4"></div>
         </section>
     </body>
 </html>
