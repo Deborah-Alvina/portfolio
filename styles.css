@@ -82,7 +82,7 @@ navbar img {
 
 .icons {
     display: flex;
-    column-gap: 1em;
+    column-gap: 2em;
     align-items: center;
 }
 
@@ -187,7 +187,6 @@ i {
     display: flex;
     justify-content: space-evenly;
     align-items: end;
-    margin-bottom: 2em;
     padding: 2em;
     background-color: var(--clr3);
 }
@@ -272,4 +271,74 @@ i {
 
 #certifications li:hover {
     transform: scale(1.04,1.04);
+}
+
+#space {
+    height: 100vh;
+    background-color: #dadada;
+}
+
+#bordertopic {
+    color: var(--clr1);
+    font-size: 4em;
+    text-align: center;
+}
+
+#projects {
+    padding-top: 2em;
+}
+
+.project {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2em;
+}
+
+.project img {
+    width: 41em;
+    height: 20em;
+    object-fit: cover;
+    margin: 2.25em;
+    border: 10px solid var(--clr4);
+    box-shadow: 3px 3px 3px -3px var(--clr1);
+}
+
+#desc {
+    margin: 2em;
+    font-size: 1.5em;
+}
+
+.button {
+    padding: 10px;
+    margin: 15px 10px;
+    background-color: var(--clr1);
+    color: var(--clr2);
+    border-radius: 10px;
+}
+
+#contact {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--clr3);
+}
+
+footer {
+    background-color: var(--clr1);
+    color: var(--clr2);
+    height: 25vh;
+    display: flex;
+    justify-content: right;
+}
+
+footer div{
+    padding: 2.5em;
+    width: 30%;
+}
+
+footer *{
+    color: var(--clr2);
 }
