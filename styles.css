@@ -25,6 +25,21 @@ a {
     color: var(--clr1);
 }
 
+i {
+    padding: 10px;
+    background-color: var(--clr1);
+    border-radius: 50%;
+    border: 1px solid var(--clr1);
+    box-shadow: 0 0 1px var(--clr1);
+    color: var(--clr2);
+}
+
+i:active {
+    color: var(--clr1);
+    background-color: var(--clr2);
+    border: 1px solid var(--clr1);
+    box-shadow: none;
+}
 
 navbar {
     display: flex;
@@ -61,14 +76,28 @@ navbar img {
     font-weight: bold;
 }
 
-
-#part1 {
+#profile {
     height: 100vh;
     padding-top: 8vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--clr3);
+}
+
+#intro {
+    width: 60%;
+    padding: 10px;
+}
+
+#intro h1{
+    text-align: center;
+    font-size: 3.5em;
+}
+
+#intro p {
+    text-align: center;
+    font-size: 1.5em;
 }
 
 #img {
@@ -80,43 +109,20 @@ navbar img {
     row-gap: 2em;
 }
 
-.icons {
-    display: flex;
-    column-gap: 2em;
-    align-items: center;
-}
-
-#part1 img {
+#profile img {
     width: 450px;
     height: 450px;
     border-radius: 50%;
     box-shadow: 0 0 1px var(--clr1);
 }
 
-i {
-    padding: 10px;
-    background-color: var(--clr1);
-    border-radius: 50%;
-    box-shadow: 0 0 1px var(--clr1);
-    color: var(--clr2);
+.icons {
+    display: flex;
+    column-gap: 2em;
+    align-items: center;
 }
 
-#text {
-    width: 60%;
-    padding: 10px;
-}
-
-#text h1{
-    text-align: center;
-    font-size: 3.5em;
-}
-
-#text p {
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.obj {
+.info {
     margin: 3em auto;
     padding: 1em 3em;
     width: 70em;
@@ -133,29 +139,20 @@ i {
     align-items: center;
 }
 
-#topic {
+#blendtopic {
     position: absolute;
     left: -170px;
     transform: rotate(-90deg);
     padding: 0;
 }
 
-#topic h1 {
+#blendtopic h1 {
     color: var(--clr4);
     font-size: 4.5em;
 }
 
-#div {
+#space {
     width: 20%;
-}
-
-#info {
-    width: 30%;
-    padding: 1em;
-    margin-right: 5em;
-    font-size: 1.35em;
-    border: 1px solid var(--clr4);
-    border-radius: 20px;
 }
 
 #content {
@@ -163,7 +160,7 @@ i {
     padding: 5em;
 }
 
-#content h1, #certifications h1 {
+.topic {
     font-size: 2.25em;
 }
 
@@ -181,14 +178,48 @@ i {
     box-shadow: 0 0 1px var(--clr1);
 }
 
+#textbox {
+    width: 30%;
+    padding: 1em;
+    margin-right: 5em;
+    font-size: 1.35em;
+    border: 1px solid var(--clr4);
+    border-radius: 20px;
+}
 
-
-#cover {
+#certifications {
     display: flex;
     justify-content: space-evenly;
     align-items: end;
     padding: 2em;
     background-color: var(--clr3);
+}
+
+#certificates {
+    border-radius: 15px;
+    margin: 1em 5em 3em 5em;
+    width: 600px;
+    height: 75vh;
+}
+
+#certificates ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 550px;
+    height: 70vh;
+}
+
+.certificate {
+    
+    font-size: 1.25em;
+    font-weight: bold;
+    transform: scale(1,1);
+    transition: transform 0.5s;
+}
+
+.certificate:hover {
+    transform: scale(1.04,1.04);
 }
 
 #animate {
@@ -246,46 +277,14 @@ i {
     }
 }
 
-#certifications {
-    border-radius: 15px;
-    margin: 1em 5em 3em 5em;
-    width: 600px;
-    height: 75vh;
+#projects {
+    padding-top: 2em;
 }
 
-#certifications ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 550px;
-    height: 70vh;
-}
-
-#certifications li {
-    
-    font-size: 1.25em;
-    font-weight: bold;
-    transform: scale(1,1);
-    transition: transform 0.5s;
-}
-
-#certifications li:hover {
-    transform: scale(1.04,1.04);
-}
-
-#space {
-    height: 100vh;
-    background-color: #dadada;
-}
-
-#bordertopic {
+.bordertopic {
     color: var(--clr1);
     font-size: 4em;
     text-align: center;
-}
-
-#projects {
-    padding-top: 2em;
 }
 
 .project {
@@ -313,8 +312,15 @@ i {
     padding: 10px;
     margin: 15px 10px;
     background-color: var(--clr1);
+    border: 1px solid var(--clr1);
     color: var(--clr2);
     border-radius: 10px;
+}
+
+.button:active {
+    background-color: var(--clr2);
+    color: var(--clr1);
+    border: 1px solid var(--clr1);
 }
 
 #contact {
@@ -334,11 +340,11 @@ footer {
     justify-content: right;
 }
 
+footer *{
+    color: var(--clr2);
+}
+
 footer div{
     padding: 2.5em;
     width: 30%;
-}
-
-footer *{
-    color: var(--clr2);
 }

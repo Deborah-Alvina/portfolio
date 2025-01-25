@@ -9,7 +9,7 @@
     </head>
     <body>
         <navbar>
-            <img src="Images/logo_white.png" alt="logo" id="logo"/>
+            <img src="Images/Logo.png" alt="logo" id="logo"/>
             <div id="menu">
                 <a class="menubutton" href="#about">ABOUT ME</a>
                 <a class="menubutton" href="#skills-certifications">SKILLS & CERTIFICATIONS</a>
@@ -18,36 +18,36 @@
             </div>
         </navbar>
         <section id="about">
-            <div id="part1">
-                <div id="text">
+            <div id="profile">
+                <div id="intro">
                     <h1>Hey, I'm Deborah Alvina... </h1>
                     <p>Computer Science and Engineering student at SRM Istitute of Science and Technology</p>
                 </div>
                 <div id="img">
-                    <img src="Images/Debby.jpg" alt="profile-image" id="profile-img"/>
+                    <img src="Images/Debby.jpg" alt="profile-image"/>
                     <div class="icons">
-                        <i class="fa-solid fa-envelope fa-2x"></i>
-                        <i class="fa-brands fa-linkedin fa-2x"></i>
-                        <i class="fa-brands fa-github fa-2x"></i>
-                        <i class="fa-brands fa-hackerrank fa-2x"></i>
+                        <a href="mailto:deborahalvina@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/deborah-alvina/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                        <a href="https://github.com/Deborah-Alvina" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+                        <a href="https://codeforces.com/profile/Deborah-Alvina" target="_blank"><i class="fa-solid fa-square-poll-vertical fa-2x"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="obj">
+            <div class="info">
                 <h3>About me:</h3>
                 <p>Strong foundation in programming languages such as C, C++ and Python, also developed a solid understanding of front-end web development. Passionate about learning, problem-solving, and contributing to meaningful projects.</p>
             </div>
-            <div class="obj">
+            <div class="info">
                 <h3>Objective:</h3>
                 <p>To work collaboratively with experienced professionals, embracing new challenges, and learning from dynamic industry environments.</p>
             </div>
         </section>
         <section id="skills-certifications">
             <div id="skills">
-                <div id="topic"><h1>SKILLS & <br>CERTIFICATIONS</h1></div>
-                <div id="div"></div>
+                <div id="blendtopic"><h1>SKILLS & <br>CERTIFICATIONS</h1></div>
+                <div id="space"></div>
                 <div id="content">
-                    <h1>Skills</h1>
+                    <h1 class="topic">Skills</h1>
                     <div id="bubbles">
                         <p class="bubble">C</p>
                         <p class="bubble">C++</p>
@@ -64,22 +64,23 @@
                         <p class="bubble">Analytical Thinking</p>
                     </div>
                 </div>
-                <div id="info">
+                <div id="textbox">
                     <h1>What's ahead...?</h1>
                     <p>Currently focused on advancing coding expertise by refining implementations and adopting best practices, with an emphasis on writing clean, efficient, and maintainable code. Simultaneously exploring new technologies and frameworks in web development, such as responsive design techniques and dynamic user interface development, to create engaging and user-friendly applications. Including delving into advanced debugging methods to streamline development processes and experimenting with modern web tools to enhance project efficiency.</p>
                 </div>
             </div>
-            <div id="cover">
-                <div id="certifications">
-                    <h1>Certifications</h1>
+            <div id="certifications">
+                <div id="certificates">
+                    <h1 class="topic">Certifications</h1>
                     <ul>
-                        <li class="hoverzoom"><a href="Documents/Data Structures in C++.pdf" target="_blank">Data Structures in C++ (Scaler)</a></li>
-                        <li class="hoverzoom"><a href="Documents/Programming, Data Structures And Algorithms Using Python.pdf" target="_blank">Programming, Data Structures And Algorithms Using Python (NPTEL)</a></li>
-                        <li class="hoverzoom"><a href="Documents/Fundamental Algorithms Design And Analysis.pdf" target="_blank">Fundamental Algorithms Design And Analysis (NPTEL)</a></li>
-                        <li class="hoverzoom"><a href="Documents/Demystifying Networking.pdf" target="_blank">Demystifying Networking (NPTEL)</a></li>
-                        <li class="hoverzoom"><a href="Documents/Introduction To Operating Systems.pdf" target="_blank">Introduction To Operating Systems (NPTEL)</a></li>
-                        <li class="hoverzoom"><a href="Documents/Introduction To Machine Learning - IITKGP.pdf" target="_blank">Introduction To Machine Learning - IITKGP (NPTEL)</a></li>
-                        <li class="hoverzoom"><a href="Documents/Career Essentials in Generative AI.pdf" target="_blank">Career Essentials in Generative AI (Microsoft and LinkedIn)</a></li>
+                        <li class="certificate"><a href="Documents/Responsive Web Design.pdf" target="_blank">Responsive Web Design (freeCodeCamp)</a></li>
+                        <li class="certificate"><a href="Documents/Data Structures in C++.pdf" target="_blank">Data Structures in C++ (Scaler)</a></li>
+                        <li class="certificate"><a href="Documents/Programming, Data Structures And Algorithms Using Python.pdf" target="_blank">Programming, Data Structures And Algorithms Using Python (NPTEL)</a></li>
+                        <li class="certificate"><a href="Documents/Fundamental Algorithms Design And Analysis.pdf" target="_blank">Fundamental Algorithms Design And Analysis (NPTEL)</a></li>
+                        <li class="certificate"><a href="Documents/Demystifying Networking.pdf" target="_blank">Demystifying Networking (NPTEL)</a></li>
+                        <li class="certificate"><a href="Documents/Introduction To Operating Systems.pdf" target="_blank">Introduction To Operating Systems (NPTEL)</a></li>
+                        <li class="certificate"><a href="Documents/Introduction To Machine Learning - IITKGP.pdf" target="_blank">Introduction To Machine Learning - IITKGP (NPTEL)</a></li>
+                        <li class="certificate"><a href="Documents/Career Essentials in Generative AI.pdf" target="_blank">Career Essentials in Generative AI (Microsoft and LinkedIn)</a></li>
                     </ul>
                 </div>
                 <div id="animate">
@@ -90,7 +91,7 @@
             </div>
         </section>
         <section id="projects">
-            <h1 id="bordertopic">Projects</h1>
+            <h1 class="bordertopic">Projects</h1>
             <div class="project">
                 <img src="Images/Parallax.png" alt="parallax web screenshot">
                 <div id="desc">
@@ -111,13 +112,13 @@
             </div>
         </section>
         <section id="contact">
-            <h1 id="bordertopic">Contact me</h1><br>
+            <h1 class="bordertopic">Contact me</h1><br>
             <div class="icons">
-                <i class="fa-solid fa-envelope fa-4x"></i>
-                <i class="fa-brands fa-linkedin fa-4x"></i>
-                <i class="fa-brands fa-github fa-4x"></i>
-                <i class="fa-brands fa-hackerrank fa-4x"></i>
-                </div>
+                <a href="mailto:deborahalvina@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/deborah-alvina/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/Deborah-Alvina" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+                <a href="https://codeforces.com/profile/Deborah-Alvina" target="_blank"><i class="fa-solid fa-square-poll-vertical fa-2x"></i></a>
+            </div>
         </section>
         <footer>
             <div>
